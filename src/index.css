@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-800 bg-[#FFF1F2];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Glassmorphism custom utilities with pastel red glow */
+.glass-panel {
+  background: rgba(255, 245, 247, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(254, 205, 211, 0.8);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(254, 205, 211, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(244, 63, 94, 0.16), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+}
+
+.glass-pill {
+  background: rgba(255, 245, 247, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(254, 205, 211, 0.75);
+}
+
+/* Candy gradients */
+.gradient-cotton {
+  background: linear-gradient(135deg, #FF9ECA 0%, #D8B4FE 50%, #93C5FD 100%);
+}
+
+.gradient-minty {
+  background: linear-gradient(135deg, #6EE7B7 0%, #7DD3FC 100%);
+}
+
+.gradient-peach {
+  background: linear-gradient(135deg, #FDE047 0%, #FDA4AF 100%);
+}
+
+.gradient-pop {
+  background: linear-gradient(135deg, #FF6EA7 0%, #A855F7 50%, #38BDF8 100%);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf2f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
